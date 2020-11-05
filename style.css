@@ -53,8 +53,9 @@ sidenav a {
   color:  #ea5c71;
   display: block;
 }
-ul li a{
+ul, li, a{
   text-decoration: none;
+  list-style: none;
 }
 
 sidenav a:hover {
@@ -290,7 +291,9 @@ nav .navlink{
   justify-content: space-around;
   display: none;
 }
-
+nav h1{
+  display: none;
+}
 nav .navlink li{
   list-style: none;
 }
@@ -344,7 +347,11 @@ nav .iconburger .line{
     background-color: #ea5c71;
     border-bottom: 3px #000 solid;
   }
-
+   nav h1{
+    font-size: 45px;
+    font-weight: lighter;
+    display: block;
+  }
   nav .navlink{
     display: flex;
     float: none;
@@ -393,7 +400,7 @@ nav .iconburger .line{
   /*.container{
     max-width: 100%;
   /*  height: 100vh;*/
- 
+
 
   .container .main{
     background-color: pink;
@@ -431,7 +438,7 @@ nav .iconburger .line{
     padding-top: 35px;
     width: 85vw;
 }
- 
+
   /*NIGHT*/
   .night{
     padding-top: 35px;

@@ -311,7 +311,7 @@ nav .iconburger{
 nav .iconburger .line{
   width: 30px;
   height: 5px;
-  background-color: #000;
+  background-color: #fff;
   margin: 5px;
   border-radius: 3px;
   transition: all .3s ease-in-out;
@@ -338,10 +338,11 @@ nav .iconburger .line{
     z-index: 10;
     right: 0;
     top: 0;
-    height: 100px;
-    width: 10%;
-    margin-right: 5%;
+    height: 95px;
+    width: 100vw;
     padding: 0 5%;
+    background-color: #ea5c71;
+    border-bottom: 3px #000 solid;
   }
 
   nav .navlink{
@@ -353,7 +354,7 @@ nav .iconburger .line{
     height:auto;
     left: 0;
     right:0;
-    top: 10%;
+    top: 95px;
     bottom: 100%;
     flex-direction: column;
     background-color: rgba(0, 0, 0, .8);
@@ -392,11 +393,12 @@ nav .iconburger .line{
   /*.container{
     max-width: 100%;
   /*  height: 100vh;*/
-  }
+ 
 
   .container .main{
     background-color: pink;
     width: 100vw;
+    padding-top: 100px;
   }
 */
   .main{
@@ -429,13 +431,13 @@ nav .iconburger .line{
     padding-top: 35px;
     width: 85vw;
 }
-  }
+ 
   /*NIGHT*/
   .night{
     padding-top: 35px;
     width: 85vw;
 }
-  }
+
 }
 
 @media only screen and (max-width: 400px){

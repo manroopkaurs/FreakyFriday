@@ -1,0 +1,452 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0 auto;
+  font-family: 'Inconsolata', monospace;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  line-height: 1.4em;
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.logo{
+  right: 0;
+  z-index: 1;
+  height: 25%;
+  width: 170px;
+  position: fixed;
+  display: block;
+  margin-top: 10%;
+}
+.logo img{
+  height: 80%;
+  width: 170px;
+}
+/*NAVBAR*/
+sidenav {
+  height: 25%;
+  width: 170px;
+  position: fixed;
+  padding-top: 25px;
+  margin-top: 40vh;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  box-shadow: 1px 10px 10px 2px #808080;
+  z-index: 1;
+}
+
+sidenav a {
+  padding: 10px 10px 10px 1px;
+  padding-right: 25%;
+  text-decoration: none;
+  font-size: 25px;
+  color:  #ea5c71;
+  display: block;
+}
+ul li a{
+  text-decoration: none;
+}
+
+sidenav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*MAIN*/
+.container .main{
+  max-width: 100%;
+  background-color: #ea5c71;
+}
+
+.main{
+    margin-top: -5%;
+    max-width: 100%;
+}
+/*MAIN SLIDESHOW*/
+#slideshow{
+  overflow: hidden;
+  z-index: -1;
+}
+
+#slideshow figure{
+  position: relative;
+  width: 500%;
+  margin-left: 0;
+  left: 0;
+  animation: 20s slider infinite;
+  max-height: 100vh,
+}
+
+#slideshow img{
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider{
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+
+
+/*MORNING*/
+.morning{
+    padding-top: 5%;
+    margin-right: 170px;
+    max-width: 100%;
+    height: 100vh;
+}
+.container.morning{
+  max-width: 100%;
+  height: 100vh;
+  margin-top: 6%;
+}
+
+/*AFTERNOON*/
+.afternoon{
+    padding-top: 35px;
+    margin-right: 170px;
+    max-width: 100%;
+    height: 100vh;
+}
+.container.afternoon{
+  max-width: 100%;
+  height: 100vh;
+}
+/*NIGHT*/
+.night{
+    padding-top: 35px;
+    margin-right: 170px;
+    max-width: 100%;
+    height: 100vh;
+}
+.container.night{
+  max-width: 100%;
+  height: 100vh;
+}
+/*FOOTER*/
+footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    justify-content:center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer img{
+  width: 50px;
+  height: 50px;
+}
+/*SLIDER*/
+.slider{
+  position: relative;
+  width: 25%;
+  overflow: hidden;
+  right: 0;
+  left: 0;
+  margin-right: 5%;
+}
+
+.videos{
+  display: flex;
+  width: 430px;
+  height: 240px;
+  border: 2px solid black;
+  box-shadow: 10px 5px 3px 3px #808080;
+}
+
+input[name="video"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+iframe{
+  transition: all 2s ease;
+  margin: inherit;
+}
+
+
+.videos input{
+  display: none;
+}
+
+.dots{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.dots label{
+  width: 8px;
+  height: 8px;
+  border: 3px solid black;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots label:hover{
+  background-color: black;
+}
+
+#vid1:checked ~.s1{
+  margin-left: 0%;
+}
+#vid2:checked ~.s1{
+  margin-left: -200%;
+}
+#vid3:checked ~.s1{
+  margin-left: -300%;
+}
+#vid4:checked ~.s1{
+  margin-left: -300%;
+}
+/*slide*/
+#vid5:checked ~.s5{
+  margin-left: 0%;
+}
+#vid6:checked ~.s5{
+  margin-left: -100%;
+}
+#vid7:checked ~.s5{
+  margin-left: -200%;
+}
+#vid8:checked ~.s5{
+  margin-left: -300%;
+}
+/*slide3*/
+#vid9:checked ~.s9{
+  margin-left: 0%;
+}
+#vid10:checked ~.s9{
+  margin-left: -100%;
+}
+#vid11:checked ~.s9{
+  margin-left: -200%;
+}
+#vid12:checked ~.s9{
+  margin-left: -300%;
+}
+.scrolldots{
+    width: 5%;
+    height: 2%;
+    border: 10% solid #fff;
+    margin: 6%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+
+/*NAVBAR2*/
+nav{
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  height: 100px;
+  padding: 0 5%;
+}
+nav .navlink{
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+
+nav .navlink li{
+  list-style: none;
+}
+
+nav .navlink a{
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+}
+
+nav .iconburger{
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav .iconburger .line{
+  width: 30px;
+  height: 5px;
+  background-color: #000;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+#navtoggle{
+  position: absolute;
+  top: -100%;
+}
+
+
+@media only screen and (max-width: 800px){
+  body{
+  }
+  .logo{
+    display: none;
+  }
+
+  /*NAVBAR*/
+  sidenav{
+    display: none;
+  }
+  nav{
+   position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    height: 100px;
+    width: 10%;
+    margin-right: 5%;
+    padding: 0 5%;
+  }
+
+  nav .navlink{
+    display: flex;
+    float: none;
+    position: fixed;
+    z-index: 9;
+    width: auto;
+    height:auto;
+    left: 0;
+    right:0;
+    top: 10%;
+    bottom: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .8);
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    justify-content: space-evenly;
+  }
+
+  nav :checked ~ .navlink{
+    bottom: 0%;
+  }
+
+  nav .navlink a{
+    color: white;
+    font-size: 20px;
+  }
+
+  nav .iconburger{
+    display: block;
+  }
+
+
+  nav :checked ~ .iconburger .line:nth-child(1){
+    transform: translateY(10px) rotate(225deg);
+  }
+
+  nav :checked ~ .iconburger .line:nth-child(2){
+      opacity: 0;
+  }
+
+  nav :checked ~ .iconburger .line:nth-child(3){
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  /*MAIN*/
+  /*.container{
+    max-width: 100%;
+  /*  height: 100vh;*/
+  }
+
+  .container .main{
+    background-color: pink;
+    width: 100vw;
+  }
+*/
+  .main{
+      margin-top: -5%;
+    /*  padding-top: 35px;*/
+      margin-right: 170px;
+      max-width: 100%;
+      max-height: 100vh;
+  }
+  /*SLIDESHOW*/
+  .slider{
+    /*position: relative;*/
+    width: 25%;
+    overflow: hidden;
+    margin-right: 5%;
+    align-self: center;
+    /*border: 1.5px solid black;*/
+  }
+  /*MORNING*/
+  .morning{
+      padding-top: 35px;
+      width: 85vw;
+  }
+  /*.container .morning{
+    margin-top: 6%;
+  }*/
+
+  /*AFTERNOON*/
+  .afternoon{
+    padding-top: 35px;
+    width: 85vw;
+}
+  }
+  /*NIGHT*/
+  .night{
+    padding-top: 35px;
+    width: 85vw;
+}
+  }
+}
+
+@media only screen and (max-width: 400px){
+  body{
+  }
+  .logo{
+    display: none;
+  }
+
+  /*NAVBAR*/
+
+
+
+}

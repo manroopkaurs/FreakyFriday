@@ -175,17 +175,19 @@ footer img{
 /*SLIDER*/
 .slider{
   position: relative;
-  width: 25%;
   overflow: hidden;
-  right: 0;
-  left: 0;
   margin-right: 5%;
+  margin-left: 8%;
+  width: 500px;
+  height: 300px;
+  padding-bottom: 60px;
 }
 
 .videos{
   display: flex;
-  width: 430px;
-  height: 240px;
+  position: sticky;
+  width: 500%;
+  height: 100%;
   border: 2px solid black;
   box-shadow: 10px 5px 3px 3px #808080;
 }
@@ -198,6 +200,8 @@ input[name="video"]{
 iframe{
   transition: all 2s ease;
   margin: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -207,13 +211,15 @@ iframe{
 
 .dots{
   display: flex;
+  position: sticky;
+  margin: 10px 20px 10px 10px;
   justify-content: center;
-  margin: 5px;
-}
+} 
 .dots label{
-  width: 8px;
-  height: 8px;
+  width: 30px;
+  height: 30px;
   border: 3px solid black;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.15s ease;
   margin: 5px;
@@ -226,39 +232,39 @@ iframe{
   margin-left: 0%;
 }
 #vid2:checked ~.s1{
-  margin-left: -200%;
+  margin-left: -20%;
 }
 #vid3:checked ~.s1{
-  margin-left: -300%;
+  margin-left: -40%;
 }
 #vid4:checked ~.s1{
-  margin-left: -300%;
+  margin-left: -60%;
 }
 /*slide*/
 #vid5:checked ~.s5{
   margin-left: 0%;
 }
 #vid6:checked ~.s5{
-  margin-left: -100%;
+  margin-left: -20%;
 }
 #vid7:checked ~.s5{
-  margin-left: -200%;
+  margin-left: -40%;
 }
 #vid8:checked ~.s5{
-  margin-left: -300%;
+  margin-left: -60%;
 }
 /*slide3*/
 #vid9:checked ~.s9{
   margin-left: 0%;
 }
 #vid10:checked ~.s9{
-  margin-left: -100%;
+  margin-left: -20%;
 }
 #vid11:checked ~.s9{
-  margin-left: -200%;
+  margin-left: -40%;
 }
 #vid12:checked ~.s9{
-  margin-left: -300%;
+  margin-left: -60%;
 }
 .scrolldots{
     width: 5%;
@@ -424,6 +430,112 @@ nav .iconburger .line{
     align-self: center;
     /*border: 1.5px solid black;*/
   }
+  
+  /*SLIDER*/
+.slider{
+  position: relative;
+  overflow: hidden;
+  margin-right: 5%;
+  margin-left: 8%;
+  width: 500px;
+  height: 300px;
+  padding-bottom: 60px;
+}
+
+.videos{
+  display: flex;
+  position: sticky;
+  width: 500%;
+  height: 100%;
+  border: 2px solid black;
+  box-shadow: 10px 5px 3px 3px #808080;
+}
+
+input[name="video"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+iframe{
+  transition: all 2s ease;
+  margin: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+
+.videos input{
+  display: none;
+}
+
+.dots{
+  display: flex;
+  position: sticky;
+  margin: 10px 20px 10px 10px;
+  justify-content: center;
+} 
+.dots label{
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots label:hover{
+  background-color: black;
+}
+
+#vid1:checked ~.s1{
+  margin-left: 0%;
+}
+#vid2:checked ~.s1{
+  margin-left: -20%;
+}
+#vid3:checked ~.s1{
+  margin-left: -40%;
+}
+#vid4:checked ~.s1{
+  margin-left: -60%;
+}
+/*slide*/
+#vid5:checked ~.s5{
+  margin-left: 0%;
+}
+#vid6:checked ~.s5{
+  margin-left: -20%;
+}
+#vid7:checked ~.s5{
+  margin-left: -40%;
+}
+#vid8:checked ~.s5{
+  margin-left: -60%;
+}
+/*slide3*/
+#vid9:checked ~.s9{
+  margin-left: 0%;
+}
+#vid10:checked ~.s9{
+  margin-left: -20%;
+}
+#vid11:checked ~.s9{
+  margin-left: -40%;
+}
+#vid12:checked ~.s9{
+  margin-left: -60%;
+}
+.scrolldots{
+    width: 5%;
+    height: 2%;
+    border: 10% solid #fff;
+    margin: 6%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+  
+  
+  
   /*MORNING*/
   .morning{
       padding-top: 35px;

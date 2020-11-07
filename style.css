@@ -149,7 +149,7 @@ h3{
 
 /*  AFTERNOON  */
 .afternoon{
-    padding-top: 35px;
+    padding-top: 5%;
     margin-right: 170px;
     max-width: 100%;
     height: 100vh;
@@ -161,7 +161,7 @@ h3{
 
 /*  NIGHT */
 .night{
-    padding-top: 35px;
+    padding-top: 5%;
     margin-right: 170px;
     max-width: 100%;
     height: 100vh;
@@ -181,7 +181,9 @@ h3{
   justify-content: center;
   align-items: center;
 }
-
+.leftbox p{
+    padding-left: 100px;
+}
 .rightbox{
   width: 100%;
   justify-content: center;
@@ -198,12 +200,6 @@ h3{
 
 }
 
-.middle {
-    position: sticky;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
 
 input[name="video"]{
     position: absolute;
@@ -238,7 +234,7 @@ input[name="video"]{
 .dots{
     display: flex;
     position: sticky;
-    margin: 10px 20px 10px 10px;
+    margin: 10px 100px 10px 0px;
     justify-content: center;
 }
 
@@ -313,4 +309,7 @@ footer{
     align-items: center;
     padding: 20px 45vw 20px 45vw;
     margin-top: 20px;
+}
+footer p{
+  text-align: center;
 }

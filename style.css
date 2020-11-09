@@ -19,10 +19,12 @@ p{
   text-align: justify;
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 18px;
+  font-size: 20px;
 }
 h3{
   font-weight: bold;
+  font-size: 22px;
+  text-align: center;
 }
 /*    HEADER    */
 .logo{
@@ -139,11 +141,11 @@ h3{
     padding-top: 5%;
     margin-right: 10%;
     max-width: 100%;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 .container.morning{
   max-width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
   margin-top: 6%;
 }
 
@@ -152,11 +154,11 @@ h3{
     padding-top: 5%;
     margin-right: 10%;
     max-width: 100%;
-    height: 100vh;
+  /*  height: 100vh;*/
 }
 .container.afternoon{
   max-width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 /*  NIGHT */
@@ -177,7 +179,7 @@ h3{
   padding: 0vh 5vh 0vh 10vh;
 }
 .leftbox{
-  width: 100%;
+  width: 50vw;
   justify-content: center;
   align-items: center;
 }
@@ -185,9 +187,13 @@ h3{
     padding-left: 11%;
 }
 .rightbox{
-  width: 100%;
+  width: 50vw;
   justify-content: center;
   align-items: center;
+  height: auto;
+}
+.rightbox p{
+  font-size: 40px;
 }
 .slider {
     width: 700px;
@@ -307,7 +313,7 @@ footer{
     text-align: center;
     justify-content:center;
     align-items: center;
-    padding: 20px 45vw 20px 45vw;
+    padding: 10px 0vw 10px 0vw;
     margin-top: 20px;
 }
 footer p{
